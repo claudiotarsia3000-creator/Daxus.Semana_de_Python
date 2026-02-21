@@ -1,44 +1,55 @@
-# Semana de Inmersión Python - Daxus 🐍
-
-¡Hola! Soy ClaudioTarsia3000, también KlaussTattoo... estudiante de **Analista de Sistemas en la ORT**. Este repositorio contiene los proyectos desarrollados durante la semana intensiva de Python de **Daxus Latam**.
+<div align="center">
+  <h1>Semana de Inmersión Python - Daxus 🐍</h1>
+  
+  <a href="https://www.instagram.com/klausstattoostudio/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Follow">
+  </a>
+  <br>
+  <sub>Author: <b>ClaudioTarsia3000 / KlaussTattoo</b><br>
+  <small>Analista de Sistemas - ORT | Febrero 2026</small>
+  </sub>
+</div>
 
 ---
 
-## 🚀 Tecnologías Aplicadas
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-![VS Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+# 📖 Introducción
+
+- Este repositorio documenta mi progreso en la inmersión intensiva de Python de **Daxus Latam**.
+- Aquí aplico los conocimientos adquiridos como estudiante de la **ORT** para resolver problemas reales con código ágil.
+- El objetivo es crear herramientas funcionales que demuestren mi evolución técnica y capacidad de análisis.
 
 ---
 
-## 📊 Registro de Proyectos Daxus
+# 📊 Actividad de la Semana
 
-| Proyecto | Descripción | Estado |
-| :--- | :--- | :---: |
-| [Proyecto 01](./GeneradorDePresupuesto/) | **Generador de Presupuesto:** Automatización de PDFs. | 🟢 Ready |
-| [Proyecto 02](./Proyecto_2/) | **Análisis de Datos:** Procesamiento con Python. | 🟢 Ready |
-| [Proyecto 03](./Proyecto_3/) | **Gestión de Ventas:** Manipulación de archivos Excel. | 🟢 Ready |
-| [Proyecto 04](./Proyecto_4/) | **Inteligencia Artificial:** Detección de posturas (Pose). | 🟢 Ready |
+| Estado | Referencia de Progreso |
+| :--- | :---: |
+| **Leyenda** | Planning 🔵 - InProcess 🟡 - Ready 🟢 - Paused 🟣 |
+
+---
+
+### 📂 Registro de Proyectos Daxus
+| # | Proyecto | Contenido | Estado |
+|:--:|:---------|:----------|:------:|
+| 01 | [Generador de Presupuesto](./GeneradorDePresupuesto/) | Automatización de facturas en PDF | Ready 🟢 |
+| 02 | [Análisis de Datos](./Proyecto_2/) | Procesamiento y limpieza de datos | Ready 🟢 |
+| 03 | [Gestión de Ventas](./Proyecto_3/) | Manipulación de archivos Excel/XLSX | Ready 🟢 |
+| 04 | [Inteligencia Artificial](./Proyecto_4/) | Detección de posturas con visión artificial | InProcess 🟡 |
 
 ---
 
 ## 🤝 Acuerdo Amistoso
 Para que nos llevemos bien y el código fluya, te pido:
 * **Respeto al autor:** No borres mi nombre del crédito si usás este material.
-* **Sin garantías:** No me eches la culpa si algo no funciona; ¡recordá que estamos aprendiendo!
-* **Cultura Colaborativa:** Si te sirve el contenido, invitame un café o vení a tatuarte a [Klauss Tattoo Studio](https://www.instagram.com/klausstattoostudio/).
-* **Charlemos:** También podés [escribirme por WhatsApp](https://wa.me/5491160013880) para hablar de Tattoos o de código. ☕🎨📱
+* **Sin garantías:** No me eches la culpa si algo no funciona; ¡estamos aprendiendo!
+* **Cultura Colaborativa:** Si te sirve el contenido, invitame un café o vení a tatuarte a [Klauss Tattoo Studio](https://www.instagram.com/klausstattoostudio/) en Buenos Aires.
+* **Charlemos:** También podés escribirme por [WhatsApp](https://wa.me/5491160013880) para hablar de tattoos o de código. ☕🎨📱
 
 ---
 
-## 📫 Conectemos siempre
 <p align="center">
   <b>De ARGENTINA - Buenos Aires 🇦🇷</b><br>
-  <b>Hecho con ❤️</b>
-</p>
-
----
-<p align="center">
+  <b>Hecho con ❤️</b><br><br>
   ⚖️ <b>Licencia</b><br>
   Este proyecto está bajo la <a href="./LICENSE">Licencia MIT</a>.
 </p>
