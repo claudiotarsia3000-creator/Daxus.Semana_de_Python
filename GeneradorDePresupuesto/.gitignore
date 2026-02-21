@@ -1,0 +1,9 @@
+# Ignorar todos los PDF por defecto
+*.pdf
+
+# EXCEPCIONES: Estos sí quiero que se suban
+!Presupuesto.pdf
+
+# Ignorar basura de sistema
+.DS_Store
+**/venv/
