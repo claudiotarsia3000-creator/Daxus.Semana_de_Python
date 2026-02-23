@@ -33,7 +33,7 @@
 |:--:|:---------|:----------|:------:|
 | 01 | [Generador de Presupuesto](./GeneradorDePresupuesto/) | Automatización de facturas en PDF | Ready 🟢 |
 | 02 | [Análisis de Datos](./Proyecto_2/) | Procesamiento y limpieza de datos | InProcess 🟡 |
-| 03 | [Gestión de Ventas](./Proyecto_3/) | Manipulación de archivos Excel/XLSX | InProcess 🟡 |
+| 03 | [Gestión de Ventas](./Proyecto_3/) | Manipulación de archivos Excel/XLSX | Ready 🟢 |
 | 04 | [Inteligencia Artificial](./Proyecto_4/) | Detección de posturas con visión artificial | InProcess 🟡 |
 
 ---
