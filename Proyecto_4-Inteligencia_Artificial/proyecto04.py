@@ -72,56 +72,61 @@
 
 ## Proyecto 4: Webcam con OpenCV
 
+# --------------------------------
+
 
 import cv2
-## Me permite importar la clase HandDetector del módulo HandTrackingModule de la biblioteca cvzone
-from cvzone.HandTrackingModule import HandDetector
-import time
+import mediapipe as mp
 
-## Función para detectar la cámara disponible
-def pick_camera(max_idx=3):
-    for i in range(max_idx):
-        cap = cv2.VideoCapture(i, cv2.CAP_AVFOUNDATION)
-        if not cap.isOpened():
-            cap.release()
-            continue
-        time.sleep(0.2)
-        ret, frame = cap.read()
-        mean = float(frame.mean()) if ret and frame is not None else 0.0
-        cap.release()
-        if mean > 5.0:
-            return i
-    return 0
-## Me permite detectar la cámara disponible y obtener su índice
-IDX = 1
-webcam = cv2.VideoCapture(IDX, cv2.CAP_AVFOUNDATION)
-print("Usando cámara IDX =", IDX)
-## Me permite verificar si la webcam se abrió correctamente
-if not webcam.isOpened():
-    raise RuntimeError("No se pudo abrir la cámara.")
-## Me permite crear un objeto de la clase HandDetector con una confianza de 
-# detección del 80% y un máximo de 2 manos detectadas   
-rastreador = HandDetector(detectionCon=0.8, maxHands=2)
-## El ciclo while se ejecutará de forma indefinida
-while True:
-    exito, imagen = webcam.read()
-    ## Me permite verificar si se pudo leer el frame de la cámara correctamente
-    if not exito or imagen is None:
-        print("No pude leer frame de la cámara")
-        continue
-## Me permite redimensionar la imagen a un tamaño de 1280x720 píxeles
-    imagen = cv2.resize(imagen, (1280, 720))
-## Me permite detectar las manos en la imagen de la webcam,
-    coordenadas, imagen_manos = rastreador.findHands(imagen)
-    print(coordenadas)
-## Me permite mostrar la imagen de la webcam
-    cv2.imshow("Proyecto 4 - IA", imagen)
+# Truco maestro: forzamos la carga de las soluciones de Google
+try:
+    # Intentamos la carga estándar
+    mp_hands = mp.solutions.hands
+    mp_drawing = mp.solutions.drawing_utils
+except AttributeError:
+    # Si falla, vamos al corazón del paquete
+    from mediapipe.framework.formats import landmark_pb2
+    import mediapipe.python.solutions.hands as mp_hands
+    import mediapipe.python.solutions.drawing_utils as mp_drawing
 
-    # ESC para salir (mejor que 'cualquier tecla' porque a veces detecta teclas raras)
-    if cv2.waitKey(1) & 0xFF == 27:
+# 1. Configuración del Detector
+detector = mp_hands.Hands(
+    static_image_mode=False,
+    max_num_hands=2,
+    min_detection_confidence=0.7,
+    min_tracking_confidence=0.5
+)
+
+# 2. Cámara para Mac
+webcam = cv2.VideoCapture(1) # Probá con 0 si el 1 no abre nada
+
+print("🚀 Último intento: Forzando IA... Presioná ESC para salir.")
+
+while webcam.isOpened():
+    exito, frame = webcam.read()
+    if not exito:
         break
-## Me permite liberar la webcam y cerrar las ventanas
+
+    # Convertir a RGB
+    img_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    resultado = detector.process(img_rgb)
+
+    # 3. Dibujar
+    if resultado.multi_hand_landmarks:
+        for hand_landmarks in resultado.multi_hand_landmarks:
+            mp_drawing.draw_landmarks(
+                frame, 
+                hand_landmarks, 
+                mp_hands.HAND_CONNECTIONS
+            )
+
+    cv2.imshow("PROYECTO 4 - FINAL (POR FIN!)", frame)
+
+    if cv2.waitKey(1) & 0xFF == 27: # ESC
+        break
+
 webcam.release()
-## Me permite cerrar las ventanas
 cv2.destroyAllWindows()
+
+
 
