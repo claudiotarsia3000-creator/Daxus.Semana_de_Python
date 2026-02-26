@@ -20,21 +20,22 @@
 
 ---
 
-# 📊 Actividad de la Semana
+## 📊 Hoja de Ruta y Proyectos
+*Leyenda de estados: 🟢 Ready | 🟡 In Process | 🟣 Paused*
 
-| Estado | Referencia de Progreso |
-| :--- | :---: |
-| **Leyenda** | Planning 🔵 - InProcess 🟡 - Ready 🟢 - Paused 🟣 |
+| # | Proyecto | Contenido Clave | Estado |
+|:--:|:---------|:----------|:------:|
+| 01 | [Generador de Presupuesto](./Proyecto_1-Generador_de_Presupuesto/) | Automatización de facturas en formato PDF. | 🟢 Ready |
+| 02 | [Análisis de Datos](./Proyecto_2-Analisis_de_Datos/) | Procesamiento, limpieza y visualización de datos. | 🟢 Ready |
+| 03 | [Gestión de Ventas](./Proyecto_3-Gestión_de_Ventas/) | Manipulación de archivos Excel/XLSX con Python. | 🟢 Ready |
+| 04 | [Inteligencia Artificial](./Proyecto_4-Inteligencia_Artificial/) | Detección de posturas con visión artificial (MediaPipe). | 🟢 Ready |
 
 ---
 
-### 📂 Registro de Proyectos Daxus
-| # | Proyecto | Contenido | Estado |
-|:--:|:---------|:----------|:------:|
-| 01 | [Generador de Presupuesto](./GeneradorDePresupuesto/) | Automatización de facturas en PDF | Ready 🟢 |
-| 02 | [Análisis de Datos](./Proyecto_2/) | Procesamiento y limpieza de datos | InProcess 🟡 |
-| 03 | [Gestión de Ventas](./Proyecto_3/) | Manipulación de archivos Excel/XLSX | Ready 🟢 |
-| 04 | [Inteligencia Artificial](./Proyecto_4/) | Detección de posturas con visión artificial | Ready 🟢 |
+## 🛠️ Cómo ejecutar los proyectos
+1. Clonar el repositorio.
+2. Navegar a la carpeta del proyecto deseado.
+3. Instalar dependencias (si aplica) y ejecutar:
 
 ---
 
